@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
-import RegisterForm from "../components/register-form"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../components/ui/card"
+import RegisterForm from "../../components/register-form"
 
 export default function RegisterPage() {
   return (

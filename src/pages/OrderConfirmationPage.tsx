@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import { CheckCircle, Package, ShoppingBag } from "lucide-react"
 
-import { Button } from "../components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
+import { Button } from "../../components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../components/ui/card"
 
 export default function OrderConfirmationPage() {
   // Generate a random order number

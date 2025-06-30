@@ -1,5 +1,5 @@
-import CheckoutForm from "../components/checkout-form"
-import OrderSummary from "../components/order-summary"
+import CheckoutForm from "../../components/checkout-form"
+import OrderSummary from "../../components/order-summary"
 
 export default function CheckoutPage() {
   return (

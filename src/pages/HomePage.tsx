@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import { ShoppingBag } from "lucide-react"
 
-import { Button } from "../components/ui/button"
-import FeaturedProducts from "../components/featured-products"
-import PromoCarousel from "../components/promo-carousel"
-import CategoryGrid from "../components/category-grid"
-import Newsletter from "../components/newsletter"
+import { Button } from "../../components/ui/button"
+import FeaturedProducts from "../../components/featured-products"
+import PromoCarousel from "../../components/promo-carousel"
+import CategoryGrid from "../../components/category-grid"
+import Newsletter from "../../components/newsletter"
 
 export default function HomePage() {
   return (

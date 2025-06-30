@@ -3,9 +3,9 @@
 import { Suspense } from "react"
 import { useSearchParams } from "react-router-dom"
 
-import ProductList from "../components/product-list"
-import ProductFilters from "../components/product-filters"
-import ProductSkeleton from "../components/product-skeleton"
+import ProductList from "../../components/product-list"
+import ProductFilters from "../../components/product-filters"
+import ProductSkeleton from "../../components/product-skeleton"
 
 export default function ProductsPage() {
   const [searchParams] = useSearchParams()
