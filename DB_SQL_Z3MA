@@ -180,41 +180,8 @@ CREATE TABLE wishlist_items (
     UNIQUE (user_id, product_id) -- Prevent duplicates in wishlist
 );
 
--- REVIEWS
-CREATE TABLE product_reviews (
-    id SERIAL PRIMARY KEY,
-    product_id VARCHAR(255) NOT NULL REFERENCES products(id) ON DELETE CASCADE,
-    user_id VARCHAR(255) REFERENCES users(id) ON DELETE SET NULL,
-    rating INT CHECK (rating BETWEEN 1 AND 5),
-    review TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 
--- SHIPMENTS
-CREATE TABLE shipments (
-    id SERIAL PRIMARY KEY,
-    order_id VARCHAR(255) NOT NULL REFERENCES orders(id) ON DELETE CASCADE,
-    tracking_number VARCHAR(255),
-    carrier VARCHAR(100),
-    shipped_date DATE,
-    estimated_delivery_date DATE,
-    status VARCHAR(50),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 
-CREATE TRIGGER trg_shipments_updated
-BEFORE UPDATE ON shipments
-FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
-
--- ORDER STATUS HISTORY
-CREATE TABLE order_status_history (
-    id SERIAL PRIMARY KEY,
-    order_id VARCHAR(255) NOT NULL REFERENCES orders(id) ON DELETE CASCADE,
-    status VARCHAR(50) NOT NULL,
-    comment TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 
 -- DISCOUNT CODES
 CREATE TABLE discount_codes (
