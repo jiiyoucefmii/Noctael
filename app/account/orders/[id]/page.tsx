@@ -12,9 +12,6 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
     date: "June 15, 2023",
     status: "Delivered",
     total: 149.99,
-    subtotal: 129.99,
-    tax: 10.0,
-    shipping: 10.0,
     items: [
       {
         id: "1",
@@ -41,7 +38,6 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
       zip: "10001",
       country: "United States",
     },
-    paymentMethod: "Credit Card ending in 1234",
   }
 
   return (
@@ -115,18 +111,9 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                 <CardTitle>Order Summary</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex justify-between">
-                  <span>Subtotal</span>
-                  <span>${order.subtotal.toFixed(2)}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Tax</span>
-                  <span>${order.tax.toFixed(2)}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Shipping</span>
-                  <span>${order.shipping.toFixed(2)}</span>
-                </div>
+       
+         
+           
                 <div className="border-t pt-4 flex justify-between font-medium">
                   <span>Total</span>
                   <span>${order.total.toFixed(2)}</span>
@@ -152,9 +139,7 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
               <CardHeader>
                 <CardTitle>Payment Method</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-gray-500">{order.paymentMethod}</p>
-              </CardContent>
+       
             </Card>
           </div>
         </div>

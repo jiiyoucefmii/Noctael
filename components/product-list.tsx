@@ -2,16 +2,18 @@ import { getProducts } from "@/lib/products"
 import ProductCard from "@/components/product-card"
 import ProductSort from "@/components/product-sort"
 
-export default async function ProductList({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
-  const category = searchParams.category as string | undefined
-  const gender = searchParams.gender as "men" | "women" | "unisex" | undefined
-  const isNew = searchParams.new === "true"
-  const isOnSale = searchParams.sale === "true"
-  const sort = searchParams.sort as string | undefined
+type ProductListProps = {
+  searchParams?: {
+    [key: string]: string | string[] | undefined
+  }
+}
+
+export default async function ProductList({ searchParams }: ProductListProps) {
+  const category = searchParams?.category as string | undefined
+  const gender = searchParams?.gender as "men" | "women" | "unisex" | undefined
+  const isNew = searchParams?.new === "true"
+  const isOnSale = searchParams?.sale === "true"
+  const sort = searchParams?.sort as string | undefined
 
   const products = await getProducts({
     category,
