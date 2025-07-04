@@ -51,14 +51,14 @@ export default function OrderConfirmationPage() {
                 Apt 4B
                 <br />
                 New York, NY 10001
-                <br />
-                United States
+                <br />          
               </p>
             </div>
 
             <div>
               <h3 className="mb-2 font-medium">Payment Method</h3>
-              <p className="text-sm text-gray-600">Credit Card ending in 1234</p>
+              <p className="text-sm text-gray-600">Payment on Delivery</p>
+              <p className="text-sm text-red-700">Keep in touch to confirm your order via a phone call</p>
             </div>
           </CardContent>
           <CardFooter className="flex flex-col space-y-4">

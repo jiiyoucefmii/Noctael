@@ -11,7 +11,7 @@ import { useCart } from "@/hooks/use-cart"
 import { useToast } from "@/hooks/use-toast"
 
 export default function CartSummary() {
-  const { subtotal, tax, shipping, total, items } = useCart()
+  const { subtotal, shipping, total, items } = useCart()
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
   const { toast } = useToast()
@@ -43,20 +43,16 @@ export default function CartSummary() {
       <CardContent className="space-y-4">
         <div className="flex justify-between">
           <span>Subtotal</span>
-          <span>${subtotal.toFixed(2)}</span>
-        </div>
-        <div className="flex justify-between">
-          <span>Tax</span>
-          <span>${tax.toFixed(2)}</span>
+          <span>{subtotal} Da</span>
         </div>
         <div className="flex justify-between">
           <span>Shipping</span>
-          <span>{shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}</span>
+          <span>{shipping === 0 ? "Free" : `${shipping} Da`}</span>
         </div>
         <Separator />
         <div className="flex justify-between font-medium">
           <span>Total</span>
-          <span>${total.toFixed(2)}</span>
+          <span>{total} Da</span>
         </div>
       </CardContent>
       <CardFooter>

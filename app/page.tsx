@@ -53,14 +53,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Categories */}
+      {/* Categories 
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="mb-8 text-center text-3xl font-bold tracking-tight">Shop by Category</h2>
           <CategoryGrid />
         </div>
       </section>
-
+      */}
       {/* Newsletter */}
       <section className="bg-black py-16 text-white">
         <div className="container mx-auto px-4">

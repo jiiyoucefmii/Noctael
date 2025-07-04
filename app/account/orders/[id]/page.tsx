@@ -37,7 +37,7 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
       city: "New York",
       state: "NY",
       zip: "10001",
-      country: "United States",
+      
     },
 
   }
@@ -135,13 +135,13 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                 <p className="text-gray-500">
                   {order.shippingAddress.city}, {order.shippingAddress.state} {order.shippingAddress.zip}
                 </p>
-                <p className="text-gray-500">{order.shippingAddress.country}</p>
+
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Payment Method</CardTitle>
+                <p>Payment On Delivery</p>
               </CardHeader>
           
             </Card>

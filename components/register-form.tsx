@@ -46,7 +46,11 @@ export default function RegisterForm() {
           <Input id="last-name" required />
         </div>
       </div>
-      <div className="space-y-2">
+        <div className="space-y-2">
+    <Label htmlFor="Phone">Phone Number</Label>
+    <Input id="Phone"type="tel" required pattern="[0-9+\s()-]{7,15}" title="Please enter a valid phone number"/>
+    </div>
+      <div className="space-y-2"> 
         <Label htmlFor="email">Email</Label>
         <Input id="email" type="email" required />
       </div>
