@@ -105,28 +105,7 @@ export default function AccountAddresses() {
                   <Input id="state" />
                 </div>
               </div>
-<<<<<<< HEAD
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="zip">ZIP/Postal Code</Label>
-                  <Input id="zip" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="country">Country</Label>
-                  <Select defaultValue="us">
-                    <SelectTrigger id="country">
-                      <SelectValue placeholder="Select country" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="us">United States</SelectItem>
-                      <SelectItem value="ca">Canada</SelectItem>
-                      <SelectItem value="uk">United Kingdom</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-=======
->>>>>>> master
+
             </div>
             <DialogFooter>
               <Button type="submit">Save Address</Button>

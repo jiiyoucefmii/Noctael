@@ -59,19 +59,13 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="mt-2 flex items-center">
           {product.isOnSale ? (
             <>
-<<<<<<< HEAD
-              <p className="font-semibold">${product.salePrice?.toFixed(2)}</p>
-              <p className="ml-2 text-sm text-gray-500 line-through">${product.price.toFixed(2)}</p>
-            </>
-          ) : (
-            <p className="font-semibold">${product.price.toFixed(2)}</p>
-=======
+
               <p className="font-semibold">${product.salePrice}</p>
               <p className="ml-2 text-sm text-gray-500 line-through">${product.price}</p>
             </> 
           ) : (
             <p className="font-semibold">${product.price}</p>
->>>>>>> master
+
           )}
         </div>
       </CardContent>

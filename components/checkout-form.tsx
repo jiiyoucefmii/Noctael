@@ -83,54 +83,16 @@ export default function CheckoutForm() {
               <Label htmlFor="address2">Apartment, suite, etc. (optional)</Label>
               <Input id="address2" />
             </div>
-<<<<<<< HEAD
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-=======
+
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
->>>>>>> master
+
               <div className="space-y-2">
                 <Label htmlFor="city">City</Label>
                 <Input id="city" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="state">State/Province</Label>
-<<<<<<< HEAD
-                <Select required>
-                  <SelectTrigger id="state">
-                    <SelectValue placeholder="Select" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="ca">California</SelectItem>
-                    <SelectItem value="ny">New York</SelectItem>
-                    <SelectItem value="tx">Texas</SelectItem>
-                    {/* Add more states */}
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="zip">ZIP/Postal Code</Label>
-                <Input id="zip" required />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="country">Country</Label>
-              <Select defaultValue="us" required>
-                <SelectTrigger id="country">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="us">United States</SelectItem>
-                  <SelectItem value="ca">Canada</SelectItem>
-                  <SelectItem value="uk">United Kingdom</SelectItem>
-                  {/* Add more countries */}
-                </SelectContent>
-              </Select>
-            </div>
-          </CardContent>
-        </Card>
 
-        {/* Payment Method */}
-=======
                  <Input id="Province" required />
               </div>
             </div>
@@ -138,7 +100,7 @@ export default function CheckoutForm() {
         </Card>
       
         {/* Payment Method 
->>>>>>> master
+
         <Card>
           <CardHeader>
             <CardTitle>Payment Method</CardTitle>
@@ -183,10 +145,8 @@ export default function CheckoutForm() {
               </TabsContent>
             </Tabs>
           </CardContent>
-<<<<<<< HEAD
-=======
           */}
->>>>>>> master
+
           <CardFooter>
             <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading ? (
@@ -199,12 +159,6 @@ export default function CheckoutForm() {
               )}
             </Button>
           </CardFooter>
-<<<<<<< HEAD
-        </Card>
-=======
-        
-      
->>>>>>> master
       </div>
     </form>
   )

@@ -40,21 +40,14 @@ export default function ProductDetails({ product }: { product: Product }) {
         <div className="mt-2 flex items-center">
           {product.isOnSale ? (
             <>
-<<<<<<< HEAD
-              <p className="text-2xl font-semibold">${product.salePrice?.toFixed(2)}</p>
-              <p className="ml-2 text-lg text-gray-500 line-through">${product.price.toFixed(2)}</p>
-              <Badge className="ml-2 bg-red-600 text-white">Sale</Badge>
-            </>
-          ) : (
-            <p className="text-2xl font-semibold">${product.price.toFixed(2)}</p>
-=======
+
               <p className="text-2xl font-semibold">{product.salePrice?.toFixed(2)} Da</p>
               <p className="ml-2 text-lg text-gray-500 line-through">Da{product.price.toFixed(2)}</p>
               <Badge className="ml-2 bg-red-600 text-white">Sale</Badge>
             </>
           ) : (
             <p className="text-2xl font-semibold">{product.price.toFixed(2)} Da</p>
->>>>>>> master
+ 
           )}
           {product.isNew && <Badge className="ml-2 bg-black text-white">New</Badge>}
         </div>
