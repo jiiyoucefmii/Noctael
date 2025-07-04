@@ -17,7 +17,10 @@ interface CartContextType {
   updateQuantity: (productId: string, quantity: number) => void
   clearCart: () => void
   subtotal: number
+<<<<<<< HEAD
   tax: number
+=======
+>>>>>>> master
   shipping: number
   total: number
 }
@@ -84,9 +87,14 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   // Calculate totals
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+<<<<<<< HEAD
   const tax = subtotal * 0.1 // 10% tax
   const shipping = subtotal > 100 ? 0 : 10 // Free shipping over $100
   const total = subtotal + tax + shipping
+=======
+  const shipping = subtotal > 100 ? 0 : 10 // Free shipping over $100
+  const total = subtotal + shipping
+>>>>>>> master
 
   return (
     <CartContext.Provider
@@ -97,7 +105,10 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         updateQuantity,
         clearCart,
         subtotal,
+<<<<<<< HEAD
         tax,
+=======
+>>>>>>> master
         shipping,
         total,
       }}

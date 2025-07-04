@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -26,7 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+<<<<<<< HEAD
         <ThemeProvider attribute="class" defaultTheme="light">
+=======
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+>>>>>>> master
           <CartProvider>
             <div className="flex min-h-screen flex-col">
               <Header />

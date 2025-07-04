@@ -105,6 +105,7 @@ export default function AccountAddresses() {
                   <Input id="state" />
                 </div>
               </div>
+<<<<<<< HEAD
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="zip">ZIP/Postal Code</Label>
@@ -124,6 +125,8 @@ export default function AccountAddresses() {
                   </Select>
                 </div>
               </div>
+=======
+>>>>>>> master
             </div>
             <DialogFooter>
               <Button type="submit">Save Address</Button>

@@ -7,7 +7,11 @@ import { Separator } from "@/components/ui/separator"
 import { useCart } from "@/hooks/use-cart"
 
 export default function OrderSummary() {
+<<<<<<< HEAD
   const { items, subtotal, tax, shipping, total } = useCart()
+=======
+  const { items, subtotal, shipping, total } = useCart()
+>>>>>>> master
 
   return (
     <Card>
@@ -38,10 +42,13 @@ export default function OrderSummary() {
             <span>${subtotal.toFixed(2)}</span>
           </div>
           <div className="flex justify-between">
+<<<<<<< HEAD
             <span>Tax</span>
             <span>${tax.toFixed(2)}</span>
           </div>
           <div className="flex justify-between">
+=======
+>>>>>>> master
             <span>Shipping</span>
             <span>{shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}</span>
           </div>

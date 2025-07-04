@@ -18,11 +18,19 @@ export default function AccountPage() {
 
         <Tabs defaultValue="profile" className="space-y-6">
           <div className="flex justify-center lg:justify-start">
+<<<<<<< HEAD
             <TabsList className="grid w-full max-w-md grid-cols-4">
               <TabsTrigger value="profile">Profile</TabsTrigger>
               <TabsTrigger value="orders">Orders</TabsTrigger>
               <TabsTrigger value="addresses">Addresses</TabsTrigger>
               <TabsTrigger value="wishlist">Wishlist</TabsTrigger>
+=======
+            <TabsList className="grid w-full max-w-md grid-cols-3">
+              <TabsTrigger value="profile">Profile</TabsTrigger>
+              <TabsTrigger value="orders">Orders</TabsTrigger>
+              <TabsTrigger value="addresses">Addresses</TabsTrigger>
+             
+>>>>>>> master
             </TabsList>
           </div>
 
@@ -40,9 +48,15 @@ export default function AccountPage() {
             <AccountAddresses />
           </TabsContent>
 
+<<<<<<< HEAD
           <TabsContent value="wishlist">
             <AccountWishlist />
           </TabsContent>
+=======
+          {/*<TabsContent value="wishlist">
+            <AccountWishlist />
+          </TabsContent>*/}
+>>>>>>> master
         </Tabs>
       </div>
     </main>

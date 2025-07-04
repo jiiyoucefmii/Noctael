@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom"
 import { ShoppingBag } from "lucide-react"
 
+<<<<<<< HEAD
 import { Button } from "../../components/ui/button"
 import CartItems from "../../components/cart-items"
 import CartSummary from "../../components/cart-summary"
+=======
+import { Button } from "../components/ui/button"
+import CartItems from "../components/cart-items"
+import CartSummary from "../components/cart-summary"
+>>>>>>> master
 
 export default function CartPage() {
   return (

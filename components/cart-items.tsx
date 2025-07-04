@@ -44,7 +44,11 @@ export default function CartItems() {
                     </h3>
                     {item.size && <p className="mt-1 text-sm text-gray-500">Size: {item.size}</p>}
                   </div>
+<<<<<<< HEAD
                   <p className="font-medium">${(item.price * item.quantity).toFixed(2)}</p>
+=======
+                  <p className="font-medium">{(item.price * item.quantity).toFixed(2)} Da</p>
+>>>>>>> master
                 </div>
                 <div className="mt-auto flex items-center justify-between">
                   <div className="flex items-center border rounded">

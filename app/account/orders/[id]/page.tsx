@@ -12,6 +12,10 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
     date: "June 15, 2023",
     status: "Delivered",
     total: 149.99,
+<<<<<<< HEAD
+=======
+    subtotal: 129.99,
+>>>>>>> master
     items: [
       {
         id: "1",
@@ -36,8 +40,14 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
       city: "New York",
       state: "NY",
       zip: "10001",
+<<<<<<< HEAD
       country: "United States",
     },
+=======
+      
+    },
+
+>>>>>>> master
   }
 
   return (
@@ -111,9 +121,17 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                 <CardTitle>Order Summary</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+<<<<<<< HEAD
        
          
            
+=======
+                <div className="flex justify-between">
+                  <span>Subtotal</span>
+                  <span>${order.subtotal.toFixed(2)}</span>
+                </div>
+                
+>>>>>>> master
                 <div className="border-t pt-4 flex justify-between font-medium">
                   <span>Total</span>
                   <span>${order.total.toFixed(2)}</span>
@@ -131,15 +149,25 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                 <p className="text-gray-500">
                   {order.shippingAddress.city}, {order.shippingAddress.state} {order.shippingAddress.zip}
                 </p>
+<<<<<<< HEAD
                 <p className="text-gray-500">{order.shippingAddress.country}</p>
+=======
+
+>>>>>>> master
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
+<<<<<<< HEAD
                 <CardTitle>Payment Method</CardTitle>
               </CardHeader>
        
+=======
+                <p>Payment On Delivery</p>
+              </CardHeader>
+          
+>>>>>>> master
             </Card>
           </div>
         </div>
